@@ -129,7 +129,7 @@
                 <hr style="margin-top:0px">
                 <img src="./files/framework.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify" style="font-size: 16px;">
-                    Overview of our method. Our framework could be divided into two parts. (1) W space inversion. We design an encoder E to invert input image $I$ into w<sup>+</sup> latent codes. 
+                    Overview of our method. Our framework could be divided into two parts. (1) W space inversion. We design an encoder E to invert input image I into w<sup>+</sup> latent codes. 
                     The w<sup>+</sup> latent codes are fed into a pre-trained EG3D generator G to get tri-plane<sub>w<sup>+</sup></sub> and rendered into reconstruction image I<sub>w<sup>+</sup></sub>. (2) Complement the F space. 
                     We calculate the image residual \Delta I between the input image and its reconstruction and propose AFA module to refine the F latent maps. 
                     The modified latent maps F<sup>*</sup> are transformed into tri-plane<sub>mix</sub> by occlusion-aware mix and rendered into the fine detailed inversion image I<sub>F<sup>*</sup></sub>.
@@ -146,21 +146,17 @@
                 </h2>
                 <hr style="margin-top:0px">
                 <p class="text-justify" style="font-size: 16px;">
-                Novel view synthesis on CelebA-HQ. Our method can generate novel views of a portrait image with high-fidelity and 
-                strong 3D-consistency via single forward pass.
+                Novel view synthesis on CelebA-HQ. Our method can generate novel view images with high-fidelity and 
+                strong 3D-consistency with our powerful encoder.
                 </p>
                 <video style="width:100%;height:100%;" playsinline autoplay loop preload muted>
-                    <source src="./files/teaser.mp4" type="video/mp4">
+                    <source src="./files/novel views.mp4" type="video/mp4">
                 </video>
                 <br></br>
-                <hr style="margin-top:0px">
-                <p class="text-justify" style="font-size: 16px;">
-                    Comparison with existing face editing methods. Our method faithfully reconstructs the given image and achieves better
-                    3D-consistency under pose variations.
-                    </p>
-                    <video style="width:97%;height:97%;" playsinline autoplay loop preload muted>
-                        <source src="./files/teaser.mp4" type="video/mp4">
-                    </video>
+                <!-- <hr style="margin-top:0px"> -->
+                <video style="width:100%;height:100%;" playsinline autoplay loop preload muted>
+                    <source src="./files/cat_novel_views.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
 
@@ -168,18 +164,18 @@
             <div class="col-md-12 col-md-offset-0 text-center">
                 <br></br>
                 <h2>
-                    Dolly Zoom Effect
+                    Comparison with existing Methods
                 </h2>
                 <hr style="margin-top:0px">
                 <p class="text-justify" style="font-size: 16px;">
-                    Our method achieves dolly zoom effect of a portrait image by explicitly adjusting the camera position and fov, 
-                    thanks to the underlying 3D representation.
+                    Our method surpasses all the encoder-based methods and is competitive with optimization methods in recovering texture details, i.e. our encoder obtains good 3D-consistent geometry and avoids artifacts in the novel view. 
                 </p>
                 <video style="width:100%;height:100%;" playsinline autoplay loop preload muted>
-                    <source src="./files/teaser.mp4" type="video/mp4">
+                    <source src="./files/compare1.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
+
 
         <div class="row">
             <div class="col-md-12 col-md-offset-0 text-center">
@@ -189,16 +185,28 @@
                 </h2>
                 <hr style="margin-top:0px">
                 <p class="text-justify" style="font-size: 16px;">
-                    Our method can also be applied to 3D-consistent interactive portrait editing due to its ability
-                    to preserve fine image details.
+                    Our method generates both realistic editing and 3D-consistent novel views.
                 </p>
                 <video style="width:100%;height:100%;" playsinline autoplay loop preload muted>
-                    <source src="./files/teaser.mp4" type="video/mp4">
+                    <source src="./files/edited.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
 
         <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br></br>
+                <h2>
+                    Video
+                </h2>
+                <hr style="margin-top:0px">
+                <video style="width:100%;height:100%;" playsinline autoplay loop preload muted>
+                    <source src="./files/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- <div class="row">
             <div class="col-md-12 col-md-offset-0 text-center">
                 <br></br>
                 <h2>
@@ -212,11 +220,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-12 col-md-offset-0">
                 <div class="text-center">
                     <h2>
@@ -276,9 +284,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-12 col-md-offset-0 text-center">
                 <br></br>
                 <h2>
@@ -290,7 +298,7 @@
                     The website template was adapted from <a href="https://yudeng.github.io/GRAM/">GRAM</a>.
                 </p>
             </div>
-        </div>
+        </div> -->
 
 
 </body>
